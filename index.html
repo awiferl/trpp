@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Наш Автосервис</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Профессиональный ремонт вашего автомобиля</h2>
+                <p>Быстро, качественно и с гарантией!</p>
+
+            </div>
+            <div class="hero-image">
+                <img src="car-repair.jpg" alt="Ремонт автомобиля">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="services" class="services slider">
+    <div class="container">
+        <h2>Наши услуги</h2>
+
+        <div class="slider-wrapper">
+
+    <button type="button" id="prev" class="slider-btn prev">‹</button>
+
+    <div class="slide active service-item">
+        <img src="oil-change.jpg" alt="Замена масла">
+        <h3>Замена масла</h3>
+        <p>Быстрая и качественная замена масла и фильтров.</p>
+    </div>
+
+    <div class="slide service-item">
+        <img src="tire-change.jpg" alt="Шиномонтаж">
+        <h3>Шиномонтаж</h3>
+        <p>Полный спектр услуг по шиномонтажу.</p>
+    </div>
+
+    <div class="slide service-item">
+        <img src="car-diagnostics.jpg" alt="Диагностика">
+        <h3>Диагностика</h3>
+        <p>Компьютерная диагностика всех систем автомобиля.</p>
+    </div>
+
+    <div class="slide service-item">
+        <img src="engine-repair.jpg" alt="Ремонт двигателя">
+        <h3>Ремонт двигателя</h3>
+        <p>Капитальный и текущий ремонт двигателей.</p>
+    </div>
+
+    <button type="button" id="next" class="slider-btn next">›</button>
+
+</div>
+
+
+    </div>
+</section>
+
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нас</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="garage.jpg" alt="Наш автосервис">
+                </div>
+                <div class="about-text">
+                    <p>Мы - команда профессионалов с многолетним опытом работы в сфере автосервиса. Наша главная цель - обеспечить качественный ремонт и обслуживание вашего автомобиля. Мы используем современное оборудование и сертифицированные запчасти, чтобы гарантировать надежность и долговечность выполненных работ.</p>
+                    <p>Доверьте свой автомобиль профессионалам!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+    <div class="container">
+        <h2 class="section-title">Форма обратной связи</h2>
+
+        <form id="feedbackForm" novalidate onsubmit="showAlert(event)">
+
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Введите email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" placeholder="+7 (___) ___-__-__">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" placeholder="Введите сообщение"></textarea>
+                <small id="charCount">0 / 400</small>
+            </div>
+
+            <button type="submit" id="submitBtn">Отправить</button>
+        </form>
+
+        <div id="formErrors"></div>
+    </div>
+</section>
+
+    <h2 class="section-title">Комментарии</h2>
+    <div id="comments"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p>
+                        <a href="tel:+12345678910">+1 (234) 567-89-10</a><br>
+                        <a href="mailto:autoservice@gmail.com">autoservice@gmail.com</a><br>
+                        г. Такой то, ул. Такая та, д. 999
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Автосервис.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.");
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
